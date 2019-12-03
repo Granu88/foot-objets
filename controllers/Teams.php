@@ -15,4 +15,18 @@ class Teams extends Controller
     ]);
 
   }
+  public function showTeam($id)
+  {
+    $model = new ModelTeams;
+    $team = $model->getTeam($id);
+    $players = $model->getPlayers($id);
+    $matchs = $model->getMatchs($id);
+    $this->render('views/showTeam.php', [
+      'team' => $team,
+      'players' => $players,
+      'matchs' => $matchs
+    ]);
+
+  }
+
 }

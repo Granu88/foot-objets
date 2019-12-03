@@ -15,8 +15,14 @@ array_shift($data);
 
 $route = $data[0] ? $data[0] : 'teams';
 
-if ($route==='teams') {
+if ($route === 'teams') {
   $controller = new Teams;
-  $controller->listTeams();
+  if (isset($data[1])) {
+    $controller->showTeam($data[1]);
+  } else {
+    $controller->listTeams();
+  }
+} else {
+  throw new \Exception('Page not foud!');
 }
 ?>

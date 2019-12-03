@@ -21,9 +21,9 @@
     <?php foreach ($teams as $teamss)  { ?>
       <div class="col-md-4 mt-4 mb-4">
         <div class="card" style="width: 22rem;">
-          <img src="<?php echo $teamss->getLogo()?>" class="card-img-top" alt="les équipes">
+          <img src="<?php echo $teamss['logo']?>" class="card-img-top" alt="les équipes">
           <div class="card-body">
-            <h4 class="card-title text-center"><a href="./team/<?php echo $teamss->getId()?>"><?php echo $teamss->getName(); ?></a></h4>
+            <h4 class="card-title text-center"><a href="./teams/<?php echo $teamss['id']?>"><?php echo $teamss['name']; ?></a></h4>
           </div>
         </div>
       </div>
