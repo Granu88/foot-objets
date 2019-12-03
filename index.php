@@ -1,5 +1,6 @@
 <?php
 use Controllers\Teams;
+use Controllers\Coach;
 
 //ça charge automatiquement les classes//
 spl_autoload_register(function ($class) {
@@ -22,6 +23,12 @@ if ($route === 'teams') {
   } else {
     $controller->listTeams();
   }
+} else if ($route === 'coach') {
+  $controller = new Coach;
+  if (isset($data[1])) {
+    $controller->showCoach($data[1]);
+  }
+
 } else {
   throw new \Exception('Page not foud!');
 }

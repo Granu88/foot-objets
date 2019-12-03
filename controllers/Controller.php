@@ -15,6 +15,6 @@ abstract class Controller
     }
     require $view;
     $content = ob_get_clean();
-    require $extend;
+    require 'public/index.php';
   }
 }

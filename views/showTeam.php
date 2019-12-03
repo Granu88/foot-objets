@@ -1,5 +1,3 @@
-<?php $extend='public/index.php' ?>
-
 <style>
 
   .card {
