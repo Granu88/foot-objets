@@ -2,6 +2,7 @@
 
 namespace Controllers;
 
+
 use Models\Coach as ModelCoach;
 
 class Coach extends Controller

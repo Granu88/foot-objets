@@ -34,7 +34,7 @@
           </tr>
           <tr>
             <td>Entraîneur du:</td>
-            <th><a href="./team/<?php echo $coach['team_id']; ?>"><?php echo $coach['team_name']; ?></a></th>
+            <th><a href="./teams/<?php echo $coach['team_id']; ?>"><?php echo $coach['team_name']; ?></a></th>
           </tr>
         </tbody>
       </table>

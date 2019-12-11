@@ -30,6 +30,6 @@ if ($route === 'teams') {
   }
 
 } else {
-  throw new \Exception('Page not foud!');
+  throw new \Exception('Page not found!');
 }
 ?>

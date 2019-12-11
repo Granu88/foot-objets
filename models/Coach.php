@@ -18,6 +18,8 @@ class Coach extends Model
       WHERE coachs_has_teams.id_coach = :id_coach
     ');
 
+    
+
     $stmt->bindValue(':id_coach', $idCoach);
 
     $stmt->execute();
