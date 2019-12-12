@@ -87,7 +87,7 @@
                 <tbody>
                   <?php foreach ($players as $player): ?>
                   <tr>
-                    <td><?php echo $player['name']; ?></td>
+                    <td><a href="./player/<?php echo $player['id']; ?>"><?php echo $player['name']; ?></a></td>
                     <td> <img src="<?php echo $player['photo']; ?>" alt="photo"> </td>
                     <td><?php echo $player['poste']; ?></td>
                     <td><?php echo (new DateTime($player['birthday_date']))->format('d/m/Y'); ?></td>
